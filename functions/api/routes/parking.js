@@ -2,7 +2,7 @@ const express = require('express');
 const myrouter = express.Router();
 const admin = require('firebase-admin');
 const db = admin.firestore();
-const dbName = 'booking';
+const dbName = 'parking';
 
 //Read All ~ GET
 myrouter.get('/read', (req,res) => {

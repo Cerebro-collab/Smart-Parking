@@ -34,7 +34,7 @@ myrouter.get('/read', (req,res) => {
 
 
 //Read by ID ~ GET
-/*myrouter.get('/read/:id', (req,res) => {
+myrouter.get('/read/:id', (req,res) => {
     ( async() => {
         try
         {
@@ -52,7 +52,6 @@ myrouter.get('/read', (req,res) => {
     })();
     //next();
     }); 
-*/
 
 
 
