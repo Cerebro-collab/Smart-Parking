@@ -22,6 +22,8 @@ app.use(bodyParser.json());
 
 
 const userRoutes = require('./api/routes/user');
+const bookingRoutes = require('./api/routes/booking');
+const dashboardRoutes = require('./api/routes/dashboard');
 
 
 
@@ -32,6 +34,9 @@ app.use((req, res, next) => {
 });
 
 app.use('/users',userRoutes);
+app.use('/booking',bookingRoutes);
+app.use('/booking',dashboardRoutes);
+
 //app.use('/transporter',transporterRoutes);
 
 
